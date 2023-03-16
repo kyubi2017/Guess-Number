@@ -39,12 +39,12 @@ checkBTN.addEventListener('click', () => {
   }
   // When guess is too high
   else if (value > generatedNum) {
-    russMsg.textContent = `too high 📈!`;
+    russMsg.textContent = `your guess is high 📈!`;
     score.textContent = Number(score.textContent) - 1;
   }
   // When guess is too low
   else if (value < generatedNum) {
-    russMsg.textContent = `too low 📉!`;
+    russMsg.textContent = `your guess is low 📉!`;
     score.textContent = Number(score.textContent) - 1;
   }
   // When guess is wrong
